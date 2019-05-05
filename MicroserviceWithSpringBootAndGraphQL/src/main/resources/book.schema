@@ -1,0 +1,17 @@
+schema{
+query: Query
+  }
+
+
+type Query{
+allBooks: [Book]
+Book(id: String): Book
+ }
+ 
+type Book{
+bookId: String
+bookName: String
+publishedDate: String
+writer: [String]
+publisher: String
+} 
