@@ -91,8 +91,8 @@ public class BookSearchController {
 	}
 
 	@GetMapping("/search/{bookId}")
-	public Book getBookInfo(@PathVariable String movieId) {
-		return service.findBookById(movieId);
+	public Book getBookInfo(@PathVariable String bookId) {
+		return service.findBookById(bookId);
 	}
 
 	@PostMapping("/getBookById")
