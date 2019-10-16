@@ -33,7 +33,7 @@ public class BookService {
 		return repository.findAll();
 	}
 
-	public Book findBookById(String movieId) {
-		return repository.findOne(movieId);
+	public Book findBookById(String bookId) {
+		return repository.findOne(bookId);
 	}
 }
