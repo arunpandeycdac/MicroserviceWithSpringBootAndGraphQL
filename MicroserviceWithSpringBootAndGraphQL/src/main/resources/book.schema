@@ -5,7 +5,7 @@ query: Query
 
 type Query{
 allBooks: [Book]
-Book(id: String): Book
+book(id: String): Book
  }
  
 type Book{

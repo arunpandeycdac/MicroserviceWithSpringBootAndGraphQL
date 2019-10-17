@@ -95,6 +95,17 @@ public class BookSearchController {
 		return service.findBookById(movieId);
 	}
 
+	/**
+	 * Body: query{
+	 * 	book(id:"101"){
+	 * 		bookId,
+	 * 		bookName,
+	 * 		publishedDate
+	 *        }
+	 * }
+	 * @param query
+	 * @return
+	 */
 	@PostMapping("/getBookById")
 	public ResponseEntity<Object> getBookById(@RequestBody String query) {
 		ExecutionResult result = graphQL.execute(query);
